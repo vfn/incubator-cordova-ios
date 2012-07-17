@@ -26,12 +26,6 @@
 #import "CDVAvailability.h"
 #import "sys/xattr.h"
 
-extern NSString * const NSURLIsExcludedFromBackupKey __attribute__((weak_import));
-
-#ifndef __IPHONE_5_1
-    NSString * const NSURLIsExcludedFromBackupKey = @"NSURLIsExcludedFromBackupKey";
-#endif
-
 @implementation CDVFile
 
 @synthesize appDocsPath, appLibraryPath, appTempPath, persistentPath, temporaryPath, userHasAllowed;
